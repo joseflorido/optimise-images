@@ -749,7 +749,7 @@ There are 2 ways to build the optimise-images.sh Docker image:
 mkdir -p /root/tools
 cd /root/tools
 git clone --depth=1 https://github.com/centminmod/optimise-images
-cd /root/tools/optimage-images
+cd /root/tools/optimise-images
 docker build --tag optimise-images:1.0 .
 ```
 
@@ -759,14 +759,14 @@ docker build --tag optimise-images:1.0 .
 mkdir -p /root/tools
 cd /root/tools
 git clone --depth=1 https://github.com/centminmod/optimise-images
-cd /root/tools/optimage-images
+cd /root/tools/optimise-images
 ./dockerbuild.sh build
 ```
 
 dockerbuild.sh also has a test feature which runs `optimise-images.sh bench-webpcompare` benchmark mode which compares a test set of JPG & PNG images against both optimised JPG, PNG and webP format versions.
 
 ```
-cd /root/tools/optimage-images
+cd /root/tools/optimise-images
 ./dockerbuild.sh test
 ```
 
